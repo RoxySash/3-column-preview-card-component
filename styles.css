@@ -1,0 +1,205 @@
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--lightgray-background);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* Our code edit the body as well 
+  
+  Bright orange: hsl(31, 77%, 52%)
+Dark cyan: hsl(184, 100%, 22%)
+Very dark cyan: hsl(179, 100%, 13%)
+
+Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
+Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
+
+Font size: 15px to rem 0.9 
+  */
+
+:root {
+  /* main colors */
+  --brightorange-color: hsl(31, 77%, 52%);
+  --darkcyan-color: hsl(184, 100%, 22%);
+  --verydarkcyan-color: hsl(179, 100%, 13%);
+  /* neutral colors */
+  --white-paragraphs: hsla(0, 0%, 100%, 0.75);
+  --lightgray-background: hsl(0, 0%, 95%);
+  /* font size */
+  --small-font: 0.75rem;
+  --larger-font: 1.7rem;
+  --lexend-font: "Lexend Deca", sans-serif;
+  --shoulders-font: "Big Shoulders", sans-serif;
+  --fontweight-one: 400;
+  --fontweight-two: 700;
+}
+
+h1 {
+  color: var(--lightgray-background);
+  font-family: var(--shoulders-font);
+  font-weight: var(--fontweight-two);
+  text-transform: uppercase;
+  font-size: var(--larger-font);
+  padding-bottom: 20px;
+}
+
+p {
+  color: var(--white-paragraphs);
+  font-family: var(--lexend-font);
+  font-weight: var(--fontweight-one);
+  font-style: normal;
+  font-size: var(--small-font);
+}
+
+img {
+  padding-bottom: 20px;
+}
+
+button {
+  padding: 10px 30px;
+  border: none;
+  border-radius: 25px;
+  background-color: var(--lightgray-background);
+}
+
+button:hover {
+  cursor: pointer;
+  border: 2px solid #0f567e;
+}
+
+.card__one-button {
+  font-family: var(--lexend-font);
+  font-weight: var(--fontweight-one);
+  font-style: normal;
+  font-size: var(--small-font);
+  color: var(--brightorange-color);
+  margin-top: 20px;
+}
+
+.card__two-button {
+  font-family: var(--lexend-font);
+  font-weight: var(--fontweight-one);
+  font-style: normal;
+  font-size: var(--small-font);
+  color: var(--darkcyan-color);
+  margin-top: 20px;
+}
+
+.card__three-button {
+  font-family: var(--lexend-font);
+  font-weight: var(--fontweight-one);
+  font-style: normal;
+  font-size: var(--small-font);
+  color: var(--verydarkcyan-color);
+  margin-top: 20px;
+}
+
+.card__one {
+  background-color: var(--brightorange-color);
+  padding: 40px;
+  width: 270px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card__two {
+  background-color: var(--darkcyan-color);
+  padding: 40px;
+  width: 270px;
+}
+
+.card__three {
+  background-color: var(--verydarkcyan-color);
+  padding: 40px;
+  width: 270px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+@media (min-width: 720px) {
+  body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card__one {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .card__three {
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+  }
+}
