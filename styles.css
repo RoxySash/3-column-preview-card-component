@@ -16,7 +16,8 @@ body {
   /* 4. Improve text rendering */
   -webkit-font-smoothing: antialiased;
   background-color: var(--lightgray-background);
-
+margin-top: 30px;
+margin-bottom: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -185,7 +186,7 @@ button:hover {
   border-bottom-right-radius: 10px;
 }
 
-@media (min-width: 720px) {
+@media (min-width: 800px) {
   body {
     display: flex;
     flex-direction: row;
@@ -201,5 +202,4 @@ button:hover {
   .card__three {
     border-top-right-radius: 10px;
     border-bottom-left-radius: 0px;
-  }
-}
+  
