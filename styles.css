@@ -186,12 +186,6 @@ button:hover {
   border-bottom-right-radius: 10px;
 }
 
-@media (min-width: 720px) {
-    article:nth-child(n) {
-        max-width: 70%;
-    }
-}
-
 @media (min-width: 800px) {
   body {
     display: flex;
