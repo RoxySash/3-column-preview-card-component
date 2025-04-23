@@ -16,8 +16,7 @@ body {
   /* 4. Improve text rendering */
   -webkit-font-smoothing: antialiased;
   background-color: var(--lightgray-background);
-margin-top: 30px;
-margin-bottom: 30px;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -143,7 +142,7 @@ button:hover {
   font-style: normal;
   font-size: var(--small-font);
   color: var(--brightorange-color);
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 .card__two-button {
@@ -152,7 +151,7 @@ button:hover {
   font-style: normal;
   font-size: var(--small-font);
   color: var(--darkcyan-color);
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 .card__three-button {
@@ -161,27 +160,29 @@ button:hover {
   font-style: normal;
   font-size: var(--small-font);
   color: var(--verydarkcyan-color);
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 .card__one {
   background-color: var(--brightorange-color);
   padding: 40px;
-  width: 270px;
+  width: 250px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  
+
 }
 
 .card__two {
   background-color: var(--darkcyan-color);
   padding: 40px;
-  width: 270px;
+  width: 250px;
 }
 
 .card__three {
   background-color: var(--verydarkcyan-color);
   padding: 40px;
-  width: 270px;
+  width: 250px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
