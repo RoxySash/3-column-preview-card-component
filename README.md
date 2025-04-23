@@ -28,22 +28,24 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
+![Desktop View](./images/Desktop%20Screenshot%203%20column%20preview%20card.png)
 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/RoxySash/3-column-preview-card-component.git)
+- Live Site URL: [Live Site](https://roxysash.github.io/3-column-preview-card-component/)
 
 ## My process
 
+1. Initialized project as a public repository 
+2. Configured repository to publish your code to a web address. 
+3. Looked through the designs to started planning. 
+4. Wrote HTML classes and added divs or sections.
+5. Wrote out the base styles for my project, including general content styles, such as `font-family` and `font-size`.
+6. Started adding styles to the top of the page and work down. Jumped back and forth for a while. 
+7. After using dev tools to check responsiveness on various screen sizes I concluded that the project was complete. 
+8. Final Push 
 
 ### Built with
 
@@ -54,7 +56,10 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I learned that the more challeneges I do the faster I get at completing them.
+
+With the breakpoint at 720px it looks terrible on mobile horizontal screen. I decided to point the breakpoint at 800. What I could do is modify the width to be a certain percent width of the screen to ensure less white spaces on the sides.
+
 
 To see how you can add code snippets, see below:
 
@@ -62,8 +67,24 @@ To see how you can add code snippets, see below:
 <h1>Some HTML code I'm proud of</h1>
 ```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+@media (min-width: 800px) {
+  body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card__one {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .card__three {
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+  }
+
 }
 ```
 
@@ -75,16 +96,12 @@ I completed this very quickly compared to the other projects. I want to develop 
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-josh
+- [Josh's CSS Reset](https://www.joshwcomeau.com/css/custom-css-reset/) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Blesky - [@yourusername](https://www.bluesky.com/yourusername)
+- Frontend Mentor - [@RoxySash](https://www.frontendmentor.io/profile/RoxySash)
+- Blesky - [@roxanedev.bsky.social](https://bsky.app/profile/roxanedev.bsky.social)
 
 
 

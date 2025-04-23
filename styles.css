@@ -75,7 +75,7 @@ h6 {
   isolation: isolate;
 }
 
-/* Our code edit the body as well 
+/* My code edit the body as well 
   
   Bright orange: hsl(31, 77%, 52%)
 Dark cyan: hsl(184, 100%, 22%)
@@ -184,6 +184,12 @@ button:hover {
   width: 270px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+}
+
+@media (min-width: 720px) {
+    article:nth-child(n) {
+        max-width: 70%;
+    }
 }
 
 @media (min-width: 800px) {
